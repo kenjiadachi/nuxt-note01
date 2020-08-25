@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  front:
+    container_name: nuxt_note_front
+    build: front/
+    command: yarn run dev
+    volumes:
+      - ./front:/app
+    ports:
+      - 8080:3000
