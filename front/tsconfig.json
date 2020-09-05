@@ -13,24 +13,26 @@
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
-    "experimentalDecorators": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "~/*": [
-        "./*"
+        "src/*"
       ],
       "@/*": [
-        "./*"
+        "src/*"
       ]
     },
     "types": [
       "@types/node",
-      "@nuxt/types"
-    ]
+      "@nuxt/types",
+      "vuetify",
+    ],
+    "experimentalDecorators": true
   },
+  "files": [
+    "shims-vue.d.ts"
+  ],
   "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
+    "node_modules"
   ]
 }
