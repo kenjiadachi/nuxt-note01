@@ -1,22 +1,28 @@
 <template lang="pug">
 v-app()
-  v-navigation-drawer(app clipped right)
-  v-app-bar(app clipped-right)
-  v-main
-    v-container
-      nuxt
+  NavBar
+  v-container
+    LeftBar
+    v-main
+      v-container
+        nuxt
+    RightBar
   Footer
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import NavBar from '~/components/organisms/NavBar.vue'
+import RightBar from '~/components/organisms/RightBar.vue'
+import LeftBar from '~/components/organisms/LeftBar.vue'
 import Footer from '~/components/organisms/Footer.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 @Component({
   components: {
+    NavBar,
+    RightBar,
+    LeftBar,
     Footer,
-    VuetifyLogo,
   },
 })
 export default class Index extends Vue {}

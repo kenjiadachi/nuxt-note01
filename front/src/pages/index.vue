@@ -1,7 +1,7 @@
 <template lang="pug">
-v-layout(column justify-center align-center)
+v-layout(column)
   v-flex(xs12 sm8 md6)
-    
+    | tttt
 
 </template>
 
