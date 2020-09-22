@@ -3,11 +3,7 @@ v-app()
   NavBar
   v-main
     v-container
-      v-row
-        v-col(cols=12 md=10 lg=9)
-          nuxt
-        v-col(cols=12 md=2 lg=3).hidden-sm-and-down
-          | rrr
+      nuxt
   Footer
 </template>
 

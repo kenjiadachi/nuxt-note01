@@ -1,5 +1,6 @@
 <template lang="pug">
 v-app-bar(app clipped-right clipped-left dense)
+  v-spacer
   v-toolbar-title
     v-img(src="/img/cpx.png" width='8rem')
   v-tabs

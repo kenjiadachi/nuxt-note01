@@ -1,20 +1,24 @@
 <template lang="pug">
 v-layout(column)
-  v-flex(xs12 sm8 md6)
-    | tttt
+
+  CardRow(:articles='articles')
 
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import CardRow from '~/components/organisms/CardRow.vue'
 
 @Component({
   components: {
-    Logo,
-    VuetifyLogo,
+    CardRow,
   },
 })
-export default class Index extends Vue {}
+export default class Index extends Vue {
+  async asyncData({ $content }) {
+    const query = await $content('articles').limit(15)
+    const articles = await query.fetch()
+    return { articles }
+  }
+}
 </script>
