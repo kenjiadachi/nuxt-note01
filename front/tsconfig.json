@@ -28,7 +28,8 @@
       "@nuxt/content",
       "vuetify",
     ],
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "skipLibCheck": true
   },
   "files": [
     "shims-vue.d.ts"
