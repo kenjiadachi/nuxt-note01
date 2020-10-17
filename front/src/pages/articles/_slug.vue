@@ -1,6 +1,6 @@
 <template lang="pug">
 v-row
-  v-col(cols=12 md=8 lg=7 xl=6)
+  v-col(cols=12 md=9 lg=8 xl=7)
     v-img(:src="article.image" aspect-ratio=1.9047)
     .px-4
       h1.heading3.pt-12.pb-6
@@ -12,7 +12,7 @@ v-row
       .tags-container
         v-chip.ma-1(outlined v-for='tag in article.tags' :key='tag')
           | # {{ tag }}
-  v-col(cols=12 md=4 lg=5 xl=6).hidden-sm-and-down.side-bar
+  v-col(cols=12 md=3 lg=4 xl=5).hidden-sm-and-down.side-bar
     .side-bar__inner
       ul.tocs-container
         div(v-for="toc in article.toc" :key="toc.id")
@@ -66,4 +66,6 @@ export default class Slug extends Vue {
   .side-bar__inner
     padding-top 20rem
     position fixed
+  p, li
+    margin-bottom 1rem
 </style>
