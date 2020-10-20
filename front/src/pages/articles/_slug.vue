@@ -13,12 +13,15 @@ v-row
         v-chip.ma-1(outlined v-for='tag in article.tags' :key='tag')
           | # {{ tag }}
   v-col(cols=12 md=3 lg=4 xl=5).hidden-sm-and-down.side-bar
-    .side-bar__inner
-      ul.tocs-container
-        div(v-for="toc in article.toc" :key="toc.id")
-          li(v-if='toc.depth==2') 
-            a(:href="'#' + toc.id")
-              | {{toc.text}}
+    .side-bar__fix
+      .side-bar__inner
+        v-card.mx-0(flat)
+          v-list(dense)
+            v-subheader 目次
+            v-list-item-group
+              v-list-item(v-for="toc in article.toc" :key="toc.id" :href="'#' + toc.id")
+                v-list-item-content
+                  v-list-item-title(v-text="toc.text")
 
 </template>
 
@@ -63,9 +66,15 @@ export default class Slug extends Vue {
     margin-bottom 2rem
   .side-bar
     height 100vh
-  .side-bar__inner
-    padding-top 20rem
+  .side-bar__fix
     position fixed
+    flex: 0 0 33.3333333333%;
+    width: 33.3333333333%;
+  .side-bar__inner
+
+
+
+
   p, li
     margin-bottom 1rem
 </style>

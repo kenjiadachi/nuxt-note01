@@ -1,26 +1,25 @@
 <template lang="pug">
-v-layout(column)
-
-  CardRow(:articles='articles')
+v-container(fluid)
+  Cards(:articles='articles')
   Pagenation(:hasPrevPage='hasPrevPage', :hasNextPage='hasNextPage', @gotoPrevPage='gotoPrevPage', @gotoNextPage='gotoNextPage')
 
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import CardRow from '~/components/organisms/CardRow.vue'
+import Cards from '~/components/organisms/Cards.vue'
 import Pagenation from '~/components/organisms/Pagenation.vue'
 
 @Component({
   components: {
-    CardRow,
+    Cards,
     Pagenation,
   },
   watchQuery: ['page'],
 })
 export default class Index extends Vue {
   async asyncData({ $content, query }) {
-    const PER_PAGE = 8
+    const PER_PAGE = 24
     const PAGE = parseInt(query.page) || 1
     const articles = await $content('articles')
       .only(['title', 'path', 'tags', 'image', 'description'])

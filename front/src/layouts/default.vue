@@ -1,25 +1,17 @@
 <template lang="pug">
 v-app()
-  NavBar
-  v-main
-    v-container
-      v-row
-        v-col(cols=12 md=10 lg=9)
-          nuxt
-        v-col(cols=12 md=2 lg=3).hidden-sm-and-down
-          | rrr
-  Footer
+  LeftBar
+  v-main(class="grey lighten-3")
+    nuxt
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import NavBar from '~/components/organisms/NavBar.vue'
-import Footer from '~/components/organisms/Footer.vue'
+import LeftBar from '~/components/organisms/LeftBar.vue'
 
 @Component({
   components: {
-    NavBar,
-    Footer,
+    LeftBar,
   },
 })
 export default class Index extends Vue {}

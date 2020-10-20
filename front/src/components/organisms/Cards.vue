@@ -1,6 +1,6 @@
 <template lang="pug">
-div
-  div(v-for='article in articles')
+v-row
+  v-col(v-for='article in articles' cols="12" sm="6" md="4" xl="3")
     Card(:key='article.slug' :article='article')
 </template>
 
@@ -17,13 +17,8 @@ interface Article {
     Card,
   },
 })
-export default class CardRow extends Vue {
+export default class Cards extends Vue {
   @Prop({ type: Array, required: true })
   articles: Array<Article>
 }
 </script>
-
-<style lang="stylus">
-.v-card
-  margin: 0 2rem 2rem
-</style>
