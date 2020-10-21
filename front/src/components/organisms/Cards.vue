@@ -1,6 +1,6 @@
 <template lang="pug">
 v-row
-  v-col(v-for='article in articles' cols="12" sm="6" md="4" xl="3")
+  v-col(v-for='article in articles' cols="12" md="6" lg="4" xl="3")
     Card(:key='article.slug' :article='article')
 </template>
 

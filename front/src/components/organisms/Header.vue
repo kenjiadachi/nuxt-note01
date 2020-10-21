@@ -1,18 +1,17 @@
 <template lang="pug">
-v-app()
-  LeftBar
-  v-main()
-    nuxt
+v-row.py-4
+  v-col
+  
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import LeftBar from '~/components/organisms/LeftBar.vue'
+import Card from '~/components/molecules/Card.vue'
 
 @Component({
   components: {
-    LeftBar,
+    Card,
   },
 })
-export default class Index extends Vue {}
+export default class Header extends Vue {}
 </script>

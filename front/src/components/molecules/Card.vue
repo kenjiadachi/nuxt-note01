@@ -1,6 +1,6 @@
 <template lang="pug">
 
-v-card.mx-0.mb-4(:to="article.path" flat)
+v-card.mx-0.mb-4(:to="article.path" outline)
   v-img(:src="article.image" aspect-ratio=1.9047)
   v-card-title
     | {{ article.title }}
