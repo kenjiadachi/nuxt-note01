@@ -1,6 +1,6 @@
 <template lang="pug">
-v-list(dense nav)
-  v-list-item(v-for="item in items" :key="item.title" link :to="item.url")
+v-list.pb-0(dense nav flat)
+  v-list-item(v-for="item in items" :key="item.title" :to="item.url")
     v-list-item-icon
       v-icon {{ item.icon }}
     v-list-item-content
