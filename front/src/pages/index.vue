@@ -18,21 +18,38 @@ import Header from '~/components/organisms/Header.vue'
     Pagenation,
     Header,
   },
-  watchQuery: ['page'],
+  watchQuery: ['page', 'tag'],
 })
 export default class Index extends Vue {
   async asyncData({ $content, query }) {
     const PER_PAGE = 24
     const PAGE = parseInt(query.page) || 1
-    const articles = await $content('articles')
-      .only(['title', 'path', 'tags', 'image', 'description'])
-      .sortBy('createdAt', 'desc')
-      .skip(PER_PAGE * (PAGE - 1))
-      .limit(PER_PAGE)
+    const articles = query.tag
+      ? await $content('articles')
+          .only(['title', 'path', 'tags', 'image', 'description'])
+          .sortBy('createdAt', 'desc')
+          .where({ tags: { $contains: query.tag } })
+          .skip(PER_PAGE * (PAGE - 1))
+          .limit(PER_PAGE)
+          .fetch()
+      : await $content('articles')
+          .only(['title', 'path', 'tags', 'image', 'description'])
+          .sortBy('createdAt', 'desc')
+          .skip(PER_PAGE * (PAGE - 1))
+          .limit(PER_PAGE)
+          .fetch()
+    const tagsObj = await $content('articles')
+      .only(['tags'])
       .fetch()
+    const alltags = tagsObj
+      .map(function(obj) {
+        return obj.tags
+      })
+      .flat()
+    const tags = [...new Set(alltags)]
     const hasPrevPage = PAGE !== 1
     const hasNextPage = articles.length === PER_PAGE
-    return { articles, hasPrevPage, hasNextPage }
+    return { articles, hasPrevPage, hasNextPage, tags }
   }
 
   gotoPrevPage() {
@@ -47,4 +64,5 @@ export default class Index extends Vue {
     }
   }
 }
+// .where({ 'tags': { $contains: query.page } })
 </script>

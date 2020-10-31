@@ -18,5 +18,5 @@ import Footer from '~/components/organisms/Footer.vue'
     Footer,
   },
 })
-export default class Index extends Vue {}
+export default class Textbase extends Vue {}
 </script>

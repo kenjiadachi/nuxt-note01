@@ -14,5 +14,5 @@ import LeftBar from '~/components/organisms/LeftBar.vue'
     LeftBar,
   },
 })
-export default class Index extends Vue {}
+export default class Default extends Vue {}
 </script>

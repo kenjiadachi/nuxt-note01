@@ -1,9 +1,16 @@
 <template lang="pug">
 v-card(flat)
-  v-card-title
-    | これまでの活動
-  v-timeline(dense)
-    TimeLineItem(v-for="item in items" :key="item.title" :item = "item")
+  v-row(align='center')
+    v-col(cols="3")
+      v-img(src="/img/profile.png")
+    v-col(cols="9")
+      v-card-title
+        | だちけん
+      v-card-text
+        | 株式会社ムジカルで取締役をしています。
+        | 学生時代に立ち上げたサービスのmusicalu、LiveDeliを通して音楽家の仕事のインフラを作っています。
+        | ほかにも、副業的にフリーランスエンジニアとしても活動しています。
+        | 個人のエンパワメントができる仕組み造りに興味があります。
 </template>
 
 <script lang="ts">
@@ -15,7 +22,7 @@ import TimeLineItem from '~/components/molecules/TimeLineItem.vue'
     TimeLineItem,
   },
 })
-export default class TimeLine extends Vue {
+export default class Profile extends Vue {
   items = [
     {
       title: 'LiveDeliの開発、運用',

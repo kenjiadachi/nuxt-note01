@@ -3,6 +3,8 @@ v-navigation-drawer(app v-model="drawer" :mobileBreakpoint='600')
   HeaderImage
   NavBarList
   NavBarServiceList
+  v-chip-group(column)
+
   template(v-slot:append)
     ProfileCard
 
@@ -25,5 +27,17 @@ import NavBarServiceList from '~/components/molecules/NavBarServiceList.vue'
 })
 export default class LeftBar extends Vue {
   drawer = null
+  async asyncData({ $content }) {
+    const tagsObj = await $content('articles')
+      .only(['tags'])
+      .fetch()
+    const alltags = tagsObj
+      .map(function(obj) {
+        return obj.tags
+      })
+      .flat()
+    const tags = [...new Set(alltags)]
+    return { tags }
+  }
 }
 </script>

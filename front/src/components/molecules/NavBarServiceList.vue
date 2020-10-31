@@ -31,6 +31,12 @@ export default class NavBarServiceList extends Vue {
       url: 'https://menta.work/user/4103',
       color: '#22B1C0',
     },
+    {
+      title: 'YOUTRUST',
+      icon: 'mdi-clipboard-account',
+      url: 'https://youtrust.jp/users/3922f8949a592d60cbea0f02d0fa090e',
+      color: '#329DA4',
+    },
   ]
 }
 </script>
