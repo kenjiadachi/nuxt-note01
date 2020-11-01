@@ -21,7 +21,7 @@ import Header from '~/components/organisms/Header.vue'
   watchQuery: ['page', 'tag'],
 })
 export default class Index extends Vue {
-  async asyncData({ $content, query }) {
+  async asyncData({ $content, query, store }) {
     const PER_PAGE = 24
     const PAGE = parseInt(query.page) || 1
     const articles = query.tag
@@ -47,9 +47,11 @@ export default class Index extends Vue {
       })
       .flat()
     const tags = [...new Set(alltags)]
+    await store.dispatch('fetchTags', tags)
     const hasPrevPage = PAGE !== 1
     const hasNextPage = articles.length === PER_PAGE
-    return { articles, hasPrevPage, hasNextPage, tags }
+
+    return { articles, hasPrevPage, hasNextPage }
   }
 
   gotoPrevPage() {

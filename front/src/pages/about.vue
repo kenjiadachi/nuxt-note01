@@ -15,5 +15,18 @@ import Profile from '~/components/organisms/Profile.vue'
     Profile,
   },
 })
-export default class About extends Vue {}
+export default class About extends Vue {
+  async asyncData({ $content, store }) {
+    const tagsObj = await $content('articles')
+      .only(['tags'])
+      .fetch()
+    const alltags = tagsObj
+      .map(function(obj) {
+        return obj.tags
+      })
+      .flat()
+    const tags = [...new Set(alltags)]
+    await store.dispatch('fetchTags', tags)
+  }
+}
 </script>

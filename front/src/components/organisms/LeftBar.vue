@@ -4,6 +4,8 @@ v-navigation-drawer(app v-model="drawer" :mobileBreakpoint='600')
   NavBarList
   NavBarServiceList
   v-chip-group(column)
+    v-chip.ma-1(outlined v-for='tag in tags' :key='tag' :to="{path: '/', query: {tag: tag}}")
+      | # {{ tag }}
 
   template(v-slot:append)
     ProfileCard
@@ -27,17 +29,9 @@ import NavBarServiceList from '~/components/molecules/NavBarServiceList.vue'
 })
 export default class LeftBar extends Vue {
   drawer = null
-  async asyncData({ $content }) {
-    const tagsObj = await $content('articles')
-      .only(['tags'])
-      .fetch()
-    const alltags = tagsObj
-      .map(function(obj) {
-        return obj.tags
-      })
-      .flat()
-    const tags = [...new Set(alltags)]
-    return { tags }
+
+  get tags() {
+    return this.$store.state.tags
   }
 }
 </script>
