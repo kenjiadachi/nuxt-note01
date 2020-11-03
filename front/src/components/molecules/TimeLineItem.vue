@@ -16,9 +16,15 @@ v-timeline-item
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
+interface TimeLineItemObject {
+  title: string
+  season: string
+  description: string
+}
+
 @Component
 export default class TimeLineItem extends Vue {
   @Prop({ type: Object, required: true })
-  item: object
+  item: TimeLineItemObject
 }
 </script>

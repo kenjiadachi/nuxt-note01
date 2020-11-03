@@ -1,30 +1,30 @@
 <template lang="pug">
 v-navigation-drawer(app v-model="setDrawer" :mobileBreakpoint='600')
-  HeaderImage
+  NavBarHeaderImage
   NavBarList
   NavBarServiceList
-  v-chip-group(column active-class="primary--text")
-    v-chip.ma-1(outlined v-for='tag in tags' :key='tag' :to="{path: '/', query: {tag: tag}}")
-      | # {{ tag }}
+  NavBarChips(:tags = "tags")
 
   template(v-slot:append)
-    ProfileCard
+    NavBarProfileCard
 
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator'
-import ProfileCard from '~/components/molecules/ProfileCard.vue'
-import HeaderImage from '~/components/molecules/HeaderImage.vue'
-import NavBarList from '~/components/molecules/NavBarList.vue'
-import NavBarServiceList from '~/components/molecules/NavBarServiceList.vue'
+import NavBarHeaderImage from '~/components/molecules/NavBar/HeaderImage.vue'
+import NavBarList from '~/components/molecules/NavBar/List.vue'
+import NavBarServiceList from '~/components/molecules/NavBar/ServiceList.vue'
+import NavBarChips from '~/components/molecules/NavBar/Chips.vue'
+import NavBarProfileCard from '~/components/molecules/NavBar/ProfileCard.vue'
 
 @Component({
   components: {
-    ProfileCard,
-    HeaderImage,
+    NavBarHeaderImage,
     NavBarList,
     NavBarServiceList,
+    NavBarChips,
+    NavBarProfileCard,
   },
 })
 export default class LeftBar extends Vue {

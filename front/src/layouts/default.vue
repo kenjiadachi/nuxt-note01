@@ -1,19 +1,20 @@
 <template lang="pug">
-v-app()
-  LeftBar( :drawer.sync="drawer" )
-  v-main()
+v-app
+  LeftBar(:drawer.sync="drawer")
+  v-main
     nuxt
-    v-btn.hidden-sm-and-up(fab large bottom right fixed color="green" dark @click="drawer = !drawer")
-      v-icon mdi-menu
+    FloatingBtn(@click="drawer = !drawer")
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import LeftBar from '~/components/organisms/LeftBar.vue'
+import FloatingBtn from '~/components/atoms/FloatingBtn.vue'
 
 @Component({
   components: {
     LeftBar,
+    FloatingBtn,
   },
 })
 export default class Default extends Vue {

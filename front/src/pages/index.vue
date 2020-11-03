@@ -1,6 +1,5 @@
 <template lang="pug">
 v-container.pt-0(fluid)
-  Header(v-if="$route.query.tag" :tag="$route.query.tag")
   Cards(:articles='articles')
   Pagenation(:hasPrevPage='hasPrevPage', :hasNextPage='hasNextPage', @gotoPrevPage='gotoPrevPage', @gotoNextPage='gotoNextPage')
 
@@ -10,13 +9,11 @@ v-container.pt-0(fluid)
 import { Component, Vue } from 'nuxt-property-decorator'
 import Cards from '~/components/organisms/Cards.vue'
 import Pagenation from '~/components/organisms/Pagenation.vue'
-import Header from '~/components/organisms/Header.vue'
 
 @Component({
   components: {
     Cards,
     Pagenation,
-    Header,
   },
   watchQuery: ['page', 'tag'],
 })

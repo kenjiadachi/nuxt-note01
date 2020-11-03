@@ -14,5 +14,5 @@ v-card.mx-0(flat)
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component
-export default class CardRow extends Vue {}
+export default class NavBarHeaderImage extends Vue {}
 </script>

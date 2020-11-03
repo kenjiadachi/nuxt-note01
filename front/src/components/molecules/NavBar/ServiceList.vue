@@ -1,16 +1,17 @@
 <template lang="pug">
 v-list.pt-0(dense nav flat)
-  v-list-item(v-for="item in items" :key="item.title" :href="item.url" target="_blank")
-    v-list-item-icon
-      v-icon( :color="item.color" ) {{ item.icon }}
-    v-list-item-content
-      v-list-item-title {{ item.title }}
+  ListItem(v-for="item in items" :key="item.title" @click='gotoItemPage' :item='item')
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import ListItem from '~/components/atoms/ListItem.vue'
 
-@Component
+@Component({
+  components: {
+    ListItem,
+  },
+})
 export default class NavBarServiceList extends Vue {
   items = [
     {
@@ -38,5 +39,9 @@ export default class NavBarServiceList extends Vue {
       color: '#329DA4',
     },
   ]
+
+  gotoItemPage(url: string) {
+    window.open(url, '_blank')
+  }
 }
 </script>

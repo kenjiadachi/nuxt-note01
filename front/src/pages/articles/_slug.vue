@@ -24,7 +24,6 @@ v-row
                   v-list-item-title(v-text="toc.text")
         v-card.mx-0(flat v-if="relatedArticles.length")
           v-subheader 関連した投稿
-
           v-card.py-2.px-2(flat v-for="relatedArticle in relatedArticles" :key="relatedArticle.title" :to="relatedArticle.path")
             v-img(:src="relatedArticle.image" aspect-ratio=1.9047 )
 

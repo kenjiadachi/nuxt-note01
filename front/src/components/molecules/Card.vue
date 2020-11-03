@@ -15,10 +15,16 @@ v-card.mx-0.mb-4(outline @click="gotoArticlePage")
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
+interface CardObject {
+  title: string
+  season: string
+  description: string
+}
+
 @Component
 export default class Card extends Vue {
   @Prop({ type: Object, required: true })
-  article: object
+  article: CardObject
 
   gotoArticlePage() {
     this.$router.push({ path: this.article.path })
