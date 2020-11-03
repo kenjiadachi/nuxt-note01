@@ -66,5 +66,4 @@ export default class Index extends Vue {
     }
   }
 }
-// .where({ 'tags': { $contains: query.page } })
 </script>

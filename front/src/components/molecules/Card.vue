@@ -7,7 +7,7 @@ v-card.mx-0.mb-4(outline @click="gotoArticlePage")
   v-card-subtitle
     | {{ article.description }}
   v-card-text
-    v-chip.ma-1(outlined v-for='tag in article.tags' :key='tag' :to="{path: '/', query: {tag: tag}}")
+    v-chip.ma-1(outlined v-for='tag in article.tags' :key='tag')
       | # {{ tag }}
 
 </template>
