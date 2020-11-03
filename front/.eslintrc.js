@@ -21,6 +21,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'generator-star-spacing': 'off',
     'prettier/prettier': 'error',
-    'object-shorthand': 0
+    'object-shorthand': 0,
   }
 }
