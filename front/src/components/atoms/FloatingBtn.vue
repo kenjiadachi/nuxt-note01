@@ -1,7 +1,6 @@
 <template lang="pug">
 v-btn.hidden-sm-and-up(fab large bottom right fixed color="green" dark @click="click")
   v-icon mdi-menu
-    
 </template>
 
 <script lang="ts">

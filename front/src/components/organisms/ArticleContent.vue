@@ -9,7 +9,6 @@ v-col(cols=12 lg=8 xl=7)
     p.font-weight-light.pb-6
       | {{ this.datetime }}
     nuxt-content(:document="article")
-
 </template>
 
 <script lang="ts">

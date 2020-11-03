@@ -7,7 +7,6 @@ v-card.mx-0(flat)
       | ロキソニンとカフェインから
       br
       | これらの記事は錬成されています
-      
 </template>
 
 <script lang="ts">

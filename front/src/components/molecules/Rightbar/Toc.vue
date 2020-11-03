@@ -4,7 +4,6 @@ v-card.mx-0(flat v-if="toc.length")
   v-list(dense nav flat)
     v-list-item-group
       ListItem(v-for="t in toc" :key="t.id" v-scroll-to="'#' + t.id" :item="t")
-
 </template>
 
 <script lang="ts">

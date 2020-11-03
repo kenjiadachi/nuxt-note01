@@ -2,7 +2,6 @@
 v-card.mx-0(flat v-if="articles.length")
   v-subheader 関連した投稿
   ImageOnlyCard(v-for="article in articles" :key="article.title" @click="gotoArticlePage" :item="article")
-
 </template>
 
 <script lang="ts">

@@ -3,7 +3,6 @@ v-col(cols=12 lg=4 xl=5).hidden-md-and-down.side-bar
   .side-bar__fix
     Toc(:toc="toc")
     RelatedArticles(:articles="articles")
-
 </template>
 
 <script lang="ts">

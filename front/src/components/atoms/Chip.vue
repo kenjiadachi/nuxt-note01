@@ -1,7 +1,6 @@
 <template lang="pug">
 v-chip.ma-1(outlined @click='click')
   | # {{ tag }}
-    
 </template>
 
 <script lang="ts">

@@ -2,7 +2,6 @@
 v-container.pt-0(fluid)
   Cards(:articles='articles')
   Pagenation(:hasPrevPage='hasPrevPage', :hasNextPage='hasNextPage', @gotoPrevPage='gotoPrevPage', @gotoNextPage='gotoNextPage')
-
 </template>
 
 <script lang="ts">

@@ -7,7 +7,6 @@ v-navigation-drawer(app v-model="setDrawer" :mobileBreakpoint='600')
 
   template(v-slot:append)
     NavBarProfileCard
-
 </template>
 
 <script lang="ts">

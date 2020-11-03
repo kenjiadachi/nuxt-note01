@@ -1,5 +1,4 @@
 <template lang="pug">
-
 v-timeline-item
   span(slot="opposite")
     | {{ item.title }}
@@ -10,7 +9,6 @@ v-timeline-item
       | {{ item.season}}
     v-card-text
       | {{ item.description }}
-
 </template>
 
 <script lang="ts">

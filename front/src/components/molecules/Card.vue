@@ -1,5 +1,4 @@
 <template lang="pug">
-
 v-card.mx-0.mb-4(outline @click="gotoArticlePage")
   v-img(:src="article.image" aspect-ratio=1.9047)
   v-card-title
@@ -9,7 +8,6 @@ v-card.mx-0.mb-4(outline @click="gotoArticlePage")
   v-card-text
     v-chip.ma-1(outlined v-for='tag in article.tags' :key='tag')
       | # {{ tag }}
-
 </template>
 
 <script lang="ts">
@@ -19,6 +17,7 @@ interface CardObject {
   title: string
   season: string
   description: string
+  path: string
 }
 
 @Component

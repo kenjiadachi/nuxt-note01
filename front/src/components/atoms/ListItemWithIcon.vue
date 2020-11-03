@@ -1,7 +1,7 @@
 <template lang="pug">
 v-list-item(@click="click")
   v-list-item-icon
-    v-icon( :color="item.color" ) {{ item.icon }}
+    v-icon(:color="item.color") {{ item.icon }}
   v-list-item-content
     v-list-item-title {{ item.title }}
 </template>
