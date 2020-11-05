@@ -1,9 +1,10 @@
 ---
 title: '[Webマーケ]SEOに効果的な記事を書く方法'
 description: 'webマーケに詳しくなりたいマン'
-tags: ['webマーケ', 'SEO']
+tags: ['SEO']
 image: 'img/header/how-to-create-seo-articles.png'
 createdAt: '2020-05-10'
+isDraft: false
 ---
 
 webマーケに必須のwebライティング。
@@ -46,7 +47,7 @@ webマーケに必須のwebライティング。
 
 たとえば、「七五三」というキーワードだとこのような形になりますね。
 
-![七五三の検索結果上位10個まとめ](./img/1.png)
+![七五三の検索結果上位10個まとめ](img/how-to-create-seo-articles/1.png)
 
 
 ---------

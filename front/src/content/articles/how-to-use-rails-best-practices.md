@@ -4,6 +4,7 @@ description: 'キレイなコードは気持ちがいい'
 tags: ['Rails']
 image: 'img/header/how-to-use-rails-best-practices.png'
 createdAt: '2020-07-29'
+isDraft: false
 ---
 
 リファクタリング、CI、コードレビュー。

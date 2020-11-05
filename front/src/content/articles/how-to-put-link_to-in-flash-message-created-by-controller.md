@@ -4,8 +4,8 @@ description: 'Railsで、flashにLinkを入れる方法を調べました。'
 tags: ['Rails']
 image: 'img/header/how-to-put-link_to-in-flash-message-created-by-controller.png'
 createdAt: '2018-09-28'
+isDraft: false
 ---
-
 
 Railsで、flashにLinkを入れたい時に調べるのに苦労したのでまとめておきます。
 

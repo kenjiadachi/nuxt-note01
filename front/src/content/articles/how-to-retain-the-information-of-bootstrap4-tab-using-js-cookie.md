@@ -1,9 +1,10 @@
 ---
-title: '[Rails]js-cookie.jsを使ってbootstrap4のタブの情報を保持する'
+title: '[jQuery]js-cookie.jsを使ってBootstrap4のタブの情報を保持する'
 description: 'ページ更新でタブが初期値に戻ってしまうのをCookieを用いてなんとかします'
-tags: ['Rails', 'javascript', 'BootStrap4']
+tags: ['jQuery', 'Bootstrap']
 image: 'img/header/how-to-retain-the-information-of-bootstrap4-tab-using-js-cookie.png'
 createdAt: '2018-08-13'
+isDraft: false
 ---
 
 タブ内にフォームがある時、postするたびに更新でタブが初期値に戻ってしまうのをなんとかしたいと思っていろいろ調べた結果、Cookieに保持するのがいいとわかりました。
@@ -43,7 +44,7 @@ createdAt: '2018-08-13'
 
 ```
 
-こんな感じのbootstrap4のタブを、更新してもタブは開いていたもののままで残しておきたい！
+こんな感じのBootstrap4のタブを、更新してもタブは開いていたもののままで残しておきたい！
 
 ---------
 
@@ -92,7 +93,7 @@ viewを編集します。
 
 思ったより簡単でびっくりしました。
 
-.tab('show')に関しては、bootstrap4側で準備してくれているイベントです。
+.tab('show')に関しては、Bootstrap4側で準備してくれているイベントです。
 
 これの一つ微妙なところが、haml内にcoffeescriptを書いてるところですね。
 
@@ -105,11 +106,3 @@ viewを編集します。
 - [js-cookie - GitHub](https://github.com/js-cookie/js-cookie)
 - [JavaScriptでcookie処理（読み・書き・削除） - Qiita](https://qiita.com/takanorip/items/4e23b803bb1393176636)
 - [Bootstrap4移行ガイド](http://cccabinet.jpn.org/bootstrap4/components/navs#using-data-attributes)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]横から出てくるナビバー、simple-sidebarを導入する](../../blog/how-to-install-simple-sidebar/)
-- [[Rails]動的なvalidationをParsleyと、Bootstrap4を使っておしゃれに実装する](../../blog/how-to-use-parsely-in-rails/)
-- [[Rails]ブログ機能を実装して、Herokuにuploadするまで](../../blog/how-to-create-blog-in-rails/)

@@ -1,11 +1,11 @@
 ---
 title: '[Rails]enumの値を日本語化してラジオボタンに突っ込む'
 description: 'enumの値ごとにラジオボタンを作るのがめんどくさいなと思っていろいろ調べた時の備忘録です'
-tags: ['Rails', 'enum']
+tags: ['Rails', 'Form']
 image: 'img/header/how-to-create-radio-button-using-enum.png'
 createdAt: '2018-07-16'
+isDraft: false
 ---
-
 
 enumの値ごとにラジオボタンを作るのがめんどくさいなと思っていろいろ調べた時の備忘録です。
 
@@ -82,10 +82,3 @@ ja:
 - [collection_radio_buttons - APIdock](https://apidock.com/rails/v4.0.2/ActionView/Helpers/FormOptionsHelper/collection_radio_buttons)
 - [How to use enum in collection_radio_buttons - stackoverflow](https://stackoverflow.com/questions/36393489/how-to-use-enum-in-collection-radio-buttons)
 - [Railsのフォーム基本的な作成方法まとめ（form_forとかform_tag）](https://qiita.com/ykyk1218/items/2541a313aac0f0e5d81a)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]検索情報を保持するcheck_box_tagの作り方](../../blog/how-to-create-check_box_tag/)
-- [[Rails]1つのformを複数画面に分割して表示するwizard formを実装する](../../blog/how-to-create-wizard-form-in-rails/)

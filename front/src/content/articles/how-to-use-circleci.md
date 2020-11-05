@@ -4,6 +4,7 @@ description: '自動デプロイやテストチェック、コード規約チェ
 tags: ['CircleCI']
 image: 'img/header/how-to-use-circleci.png'
 createdAt: '2020-08-02'
+isDraft: false
 ---
 
 CIツールで企業では一番ポピュラーに使われているのでは？というCircleCI。
@@ -36,7 +37,7 @@ CIツールで企業では一番ポピュラーに使われているのでは？
 
 > Linux、macOS、Android、Windows、さらに SaaS やファイアウォールの内側など、必要な場所で動作します。
 
-![CircleCI](./img/1.png)
+![CircleCI](img/how-to-use-circleci/1.png)
 
 めっちゃわかりやすい図ですね…
 

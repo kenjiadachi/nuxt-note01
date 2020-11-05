@@ -1,9 +1,10 @@
 ---
 title: '[Rails]MySQLのJSON型をActiveRecordで扱おう'
 description: 'カウンタとかタグとかにふわっと使えますよ'
-tags: ['Rails', 'ActiveRecord']
+tags: ['Rails']
 image: 'img/header/how-to-use-json-rails-activerecord.png'
 createdAt: '2020-07-24'
+isDraft: false
 ---
 
 MySQL5.7から、JSON型のカラムを作成することができるようになりました。

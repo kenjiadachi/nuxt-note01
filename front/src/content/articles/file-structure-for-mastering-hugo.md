@@ -4,6 +4,7 @@ description: 'しばらくHugoを使う中で気づいたのが、よくファ�
 tags: ['Hugo']
 image: 'img/header/file-structure-for-mastering-hugo.png'
 createdAt: '2020-05-13'
+isDraft: false
 ---
 
 しばらくHugoを使う中で気づいたのが、よくファイル構造に迷わされるということ。
@@ -48,7 +49,7 @@ createdAt: '2020-05-13'
 
 [こちら](https://maku77.github.io/hugo/misc/page-bundle.html)のページがすごく分かりやすかったので、参照させていただきます。
 
-(個人的に使いやすいリーフ版ドルをメインにご紹介したいので、順序は逆になっています。)
+(個人的に使いやすいリーフバンドルをメインにご紹介したいので、順序は逆になっています。)
 
 ```
 .
@@ -142,10 +143,3 @@ index.htmlをつくれば、以降はすべてこの中身として扱われま�
 ## 参考にした記事
 - [画像ファイルを Markdown ファイルと同じディレクトリに置く (Page Bundle)](https://maku77.github.io/hugo/misc/page-bundle.html)
 - [Page Bundles - HUGO](https://gohugo.io/content-management/page-bundles)
-
---------
-
-## こちらもぜひご一緒に！
-
-- [[Hugo]faviconを設定する方法](../../blog/how-to-set-favicon/)
-- [[Hugo]Docker上で管理できるポートフォリオを作ってみたよ](../../blog/how-to-create-this-page/)

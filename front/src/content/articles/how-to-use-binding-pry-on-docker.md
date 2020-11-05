@@ -1,9 +1,10 @@
 ---
 title: '[Rails]Docker環境上でbinding.pryを使う'
 description: 'デバッグツールを使いこなしましょう'
-tags: ['Rails']
+tags: ['Rails', 'Docker']
 image: 'img/header/how-to-use-binding-pry-on-docker.png'
 createdAt: '2020-08-02'
+isDraft: false
 ---
 
 `binding.pry`。とりあえずデバッグのときに何回も試すアレですね。

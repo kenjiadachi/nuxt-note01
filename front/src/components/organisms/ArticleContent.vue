@@ -30,7 +30,7 @@ interface ArticleContentObject {
   },
 })
 export default class ArticleContent extends Vue {
-  @Prop({ type: Array, required: true })
+  @Prop({ type: Object, required: true })
   article: ArticleContentObject
 
   get datetime() {
@@ -61,4 +61,6 @@ export default class ArticleContent extends Vue {
     margin-bottom 2rem
   p, li
     margin-bottom 1rem
+  img
+    max-width 100%
 </style>

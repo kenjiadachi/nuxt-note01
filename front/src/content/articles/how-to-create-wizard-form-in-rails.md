@@ -1,9 +1,10 @@
 ---
 title: '[Rails]1つのformを複数画面に分割して表示するwizard formを実装する'
 description: 'Formをスッキリと見せて入力してもらいやすくするため、Wizard Formの形式に変更してみました'
-tags: ['Rails', 'Wizard Form', 'ActiveModel']
+tags: ['Rails', 'Form']
 image: 'img/header/how-to-create-wizard-form-in-rails.png'
 createdAt: '2018-11-10'
+isDraft: false
 ---
 
 
@@ -191,10 +192,3 @@ end
 - [Developing a wizard or multi-steps forms in Rails – Nicolas Blanco – Medium](https://medium.com/@nicolasblanco/developing-a-wizard-or-multi-steps-forms-in-rails-d2f3b7c692ce)
 - [ActiveModel::Attributes が最高すぎるんだよな。 - Qiita](https://qiita.com/alpaca_taichou/items/bebace92f06af3f32898)
 - [Rails で複数モデルに関連したパラメータを検証する方法 - ボクココ](https://www.bokukoko.info/entry/2016/04/29/Rails_%E3%81%A7%E8%A4%87%E6%95%B0%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AB%E9%96%A2%E9%80%A3%E3%81%97%E3%81%9F%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%82%92%E6%A4%9C%E8%A8%BC%E3%81%99%E3%82%8B%E6%96%B9)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]enumの値を日本語化してラジオボタンに突っ込む](../../blog/how-to-create-radio-button-using-enum/)
-- [[Rails]検索情報を保持するcheck_box_tagの作り方](../../blog/how-to-create-check_box_tag/)

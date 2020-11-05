@@ -1,9 +1,10 @@
 ---
 title: '[Rails]paramsにform以外の値を入れたい！と思ってるあなたへ'
 description: '一意な予約コードを自動生成する必要があるなど、ちょっとしたときに便利ですね'
-tags: ['Rails']
+tags: ['Rails', 'Form']
 image: 'img/header/how-to-put-a-value-other-than-form-in-params.png'
 createdAt: '2018-02-04'
+isDraft: false
 ---
 
 先日、大学の課題で[こんなもの](https://arcane-hamlet-34891.herokuapp.com/)を作ってみました。
@@ -28,7 +29,7 @@ createdAt: '2018-02-04'
 
 ログイン後に、旅行の詳細ページに飛ぶと登場する「予約する」ボタンを押すと、一意な予約コードを自動生成する必要があり、悩みました。
 
-![画面例](./img/1.png)
+![画面例](img/how-to-put-a-value-other-than-form-in-params/1.png)
 
 この予約コードを自動生成するために、最初送られてきたparamsからごちゃごちゃしようと思ってたのですが、どうにも難しそうでした。
 

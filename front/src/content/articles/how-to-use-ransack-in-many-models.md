@@ -4,6 +4,7 @@ description: '日本語で書かれている記事が見つからなかったの
 tags: ['Rails']
 image: 'img/header/how-to-use-ransack-in-many-models.png'
 createdAt: '2018-06-25'
+isDraft: false
 ---
 
 日本語で書かれている記事が見つからなかったので。
@@ -24,7 +25,7 @@ createdAt: '2018-06-25'
 
 その時のコードはこんな感じ
 
-```html.haml
+```haml
 # index.haml
 
 .row
@@ -62,7 +63,7 @@ end
 
 こんな感じでパラメータを`:q`以外にも設定してあげればいいみたいですね。
 
-```html.haml
+```haml
 # index.haml
 
 .row
@@ -100,8 +101,3 @@ end
 
 - [ransackのWiki](https://github.com/activerecord-hackery/ransack/wiki/Configuration)
 
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]検索情報を保持するcheck_box_tagの作り方](../../blog/how-to-create-check_box_tag/)

@@ -1,9 +1,10 @@
 ---
 title: '[Notion]1000ページ以上でも無料化！僕なりの使い方をまとめます'
 description: 'Notionのデザインほんと好き'
-tags: ['Notion', 'tools']
+tags: ['Notion']
 image: 'img/header/notion-how-to-use.png'
 createdAt: '2020-05-20'
+isDraft: false
 ---
 
 
@@ -33,13 +34,13 @@ createdAt: '2020-05-20'
 
 ## 日報ツールとして
 
-![日報画面画像](./img/1.png)
+![日報画面画像](img/notion-how-to-use/1.png)
 
 日報ツールですが、Notionのカレンダーに追加する感じでやってます。
 
 まだ`Untitled`になってますが、タイトルはその日を一言でまとめて入れるようにしています。
 
-![日報入力画面画像](./img/2.png)
+![日報入力画面画像](img/notion-how-to-use/2.png)
 
 日報内容はこんな感じ。
 
@@ -49,7 +50,7 @@ createdAt: '2020-05-20'
 
 ## メモとして
 
-![メモ画面画像](./img/3.png)
+![メモ画面画像](img/notion-how-to-use/3.png)
 
 メモはふつーのリストですね。
 
@@ -59,7 +60,7 @@ createdAt: '2020-05-20'
 
 ## 記事ストックとして
 
-![記事ストック画面画像](./img/4.png)
+![記事ストック画面画像](img/notion-how-to-use/4.png)
 
 最後は記事ストックとしてですね。
 

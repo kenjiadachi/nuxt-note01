@@ -1,9 +1,10 @@
 ---
-title: '[Rails]横から出てくるナビバー、simple-sidebarを導入する'
+title: '[jQuery]横から出てくるナビバー、simple-sidebarを導入する'
 description: 'ナビバー以外にログインユーザーのみに表示するリンク一覧が欲しかったので、simple-sidebarを導入しました'
-tags: ['Rails', 'javascript', 'jQuery', 'Bootstrap4']
+tags: ['jQuery']
 image: 'img/header/how-to-install-simple-sidebar.png'
 createdAt: '2018-08-06'
+isDraft: false
 ---
 
 ナビバー以外にログインユーザーのみに表示するリンク一覧が欲しかったので、いろいろ探しているとこんなものを見つけ、さっそく導入してみました。
@@ -63,7 +64,7 @@ $(document).on 'turbolinks:load', ->
 
 あとはviewをこんな感じに変えるだけ。
 
-(bootstrap4、devise、font-awesomeを使用してます。)
+(Bootstrap4、devise、font-awesomeを使用してます。)
 
 ```html.haml
 / application.html.haml
@@ -112,11 +113,3 @@ $(document).on 'turbolinks:load', ->
 
 - [Ruby On Rails AssetPipelineで読み込まれるJSの順番指定について](http://coa.hateblo.jp/entry/2012/08/03/093928)
 - [simple-sidebar - GitHub](https://github.com/dcdeiv/simple-sidebar)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]js-cookie.jsを使ってbootstrap4のタブの情報を保持する](../../blog/how-to-retain-the-information-of-bootstrap4-tab-using-js-cookie/)
-- [[Rails]動的なvalidationをParsleyと、Bootstrap4を使っておしゃれに実装する](../../blog/how-to-use-parsely-in-rails/)
-- [[Rails]ブログ機能を実装して、Herokuにuploadするまで](../../blog/how-to-create-blog-in-rails/)

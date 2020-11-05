@@ -4,6 +4,7 @@ description: '「そういえば404エラーのページってどうやって作
 tags: ['Rails']
 image: 'img/header/how-to-create-an-error-page.png'
 createdAt: '2019-06-24'
+isDraft: false
 ---
 
 Railsでアプリケーションを開発している時にふと、「そういえば404エラーのページってどうやって作るんだろう」と思い調べてみました。
@@ -64,7 +65,7 @@ Railsさんすごい。
 
 なにも触らないままdevelopment環境で適当なアドレス打ってみても、こんな画面が出ますよね。
 
-![エラー画面.png](./img/1.png)
+![エラー画面1.png](img/how-to-create-an-error-page/1.png)
 
 なのでエラー画面を確認したい！という時は、config/environments/development.rb の中身を少しいじる必要があります。
 こんな感じでコメントアウトしてある部分を、コメントアウトを外しfalseにしてみてください。
@@ -81,7 +82,7 @@ config.consider_all_requests_local = false
 
 その後サーバーを再起動して、適当なアドレスを打ち込むとこんな画面が出てくるようになると思います。
 
-![エラー画面.png](./img/2.png)
+![エラー画面2.png](img/how-to-create-an-error-page/2.png)
 
 この画面がRailsが自動で作ってくれた404エラーページ(=public/404.html)になります。
 

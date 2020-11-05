@@ -1,9 +1,10 @@
 ---
 title: '[Heroku]Heroku上に既存の本番環境からステージング環境を作成'
 description: '今はもうできないらしいですが…'
-tags: ['Heroku', 'test']
+tags: ['Heroku']
 image: 'img/header/copy-the-staging-environment-on-heroku.png'
 createdAt: '2018-03-25'
+isDraft: false
 ---
 
 2018/03/23追記:

@@ -1,9 +1,10 @@
 ---
 title: '[Hugo]Docker上で管理できるポートフォリオを作ってみたよ'
 description: 'Hugoをつかってこのページを作ってみたので、作り方をまとめてみました。'
-tags: ['Hugo', 'portfolio', 'Docker', 'GitHub Pages']
+tags: ['Hugo', 'Docker', 'GitHub']
 image: 'img/header/how-to-create-this-page.png'
 createdAt: '2020-01-06'
+isDraft: false
 ---
 
 Hugoをつかってこのページを作ってみたので、作り方をまとめてみました。
@@ -323,7 +324,7 @@ git commit -m $ct
 git push
 ```
 
-![githubの設定1](./img/1.png)
+![githubの設定1](img/how-to-create-this-page/1.png)
 
 ここまでいけばもうすぐです。
 
@@ -335,11 +336,11 @@ Dockerfileをおいたディレクトリで、以下のコマンドを入力し�
 
 GitHubのページを更新してみると、以下のようになっていませんか？(docsができているはず)
 
-![githubの設定2](./img/2.png)
+![githubの設定2](img/how-to-create-this-page/2.png)
 
 こうなっていれば、Settingsに移動し、部分を選択されているものに変えてください。
 
-![githubの設定3](./img/3.png)
+![githubの設定3](img/how-to-create-this-page/3.png)
 
 すると、緑色の部分にあるURLで静的ページとして公開されているはずです。
 
@@ -357,10 +358,3 @@ GitHubのページを更新してみると、以下のようになっていま�
 - [HugoでWebサイトを立ち上げる+テーマを適用してみる](https://qiita.com/bake0937/items/e0914efbd9434be474a4)
 - [Hugo Part 2 - Hugo で github にブログを立ち上げる](http://blog.syati.info/post/create_hugo_2/)
 - [hugo-theme-dreamのドキュメント](https://g1eny0ung.site/hugo-theme-dream/#/)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Hugo]faviconを設定する方法](../../blog/how-to-set-favicon/)
-- [[Hugo]Hugoを使いこなすためのオススメファイル構造](../../blog/file-structure-for-mastering-hugo/)

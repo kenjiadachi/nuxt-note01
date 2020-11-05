@@ -1,9 +1,10 @@
 ---
 title: '[Hugo]faviconを設定する方法'
 description: 'Hugoをつかっているこのページにfaviconを設定してみました'
-tags: ['Hugo', 'favicon']
+tags: ['Hugo']
 image: 'img/header/how-to-set-favicon.png'
 createdAt: '2020-02-28'
+isDraft: false
 ---
 
 Hugoで作成したこちらのページに、faviconを設定してみました。
@@ -41,7 +42,7 @@ Hugoで作成したこちらのページに、faviconを設定してみました
 
 ### Hugoとは？
 
-こちらについては詳しく、[このページ](../../blog/how-to-create-this-page/#hugo)で紹介しています。
+こちらについては詳しく、[このページ](../how-to-create-this-page)で紹介しています。
 
 いろいろテーマを設定できるのが便利ですね。
 
@@ -173,10 +174,3 @@ version指定とかができるのかな？と思いますが試していませ�
 
 - [Hugoでfaviconをつけよう](https://xn--v6q832hwdkvom.com/post/hugo%E3%81%A7favicon%E3%82%92%E3%81%A4%E3%81%91%E3%82%88%E3%81%86/)
 - [ファビコンとは〜設置すべき理由と無料で簡単に作成できるツールを紹介](https://ferret-plus.com/387)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Hugo]Docker上で管理できるポートフォリオを作ってみたよ](../../blog/how-to-create-this-page/)
-- [[Hugo]Hugoを使いこなすためのオススメファイル構造](../../blog/file-structure-for-mastering-hugo/)

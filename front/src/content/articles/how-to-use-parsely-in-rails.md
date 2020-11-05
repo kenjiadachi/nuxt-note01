@@ -1,9 +1,10 @@
 ---
-title: '[Rails]動的なvalidationをParsleyと、Bootstrap4を使っておしゃれに実装する'
+title: '[jQuery]動的なvalidationをParsleyと、Bootstrap4を使っておしゃれに実装する'
 description: 'Form離脱の原因となる、validationでのイライラをましにします'
-tags: ['Rails', 'Parsley', 'BootStrap4']
+tags: ['jQuery', 'Bootstrap', 'Form']
 image: 'img/header/how-to-use-parsely-in-rails.png'
 createdAt: '2018-11-10'
+isDraft: false
 ---
 
 Form離脱の原因として、validation関連は間違いなくあげられると思います。
@@ -114,11 +115,3 @@ textarea {
 
 - [Railsにparsleyというjavascriptのバリデータを導入 - Qiita](https://qiita.com/mekemo_dao/items/4875a45c971091401ff1)
 - [parsley公式ページ](https://parsleyjs.org/)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]横から出てくるナビバー、simple-sidebarを導入する](../../blog/how-to-install-simple-sidebar/)
-- [[Rails]js-cookie.jsを使ってbootstrap4のタブの情報を保持する](../../blog/how-to-retain-the-information-of-bootstrap4-tab-using-js-cookie/)
-- [[Rails]ブログ機能を実装して、Herokuにuploadするまで](../../blog/how-to-create-blog-in-rails/)

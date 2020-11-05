@@ -23,7 +23,7 @@ export default class Slug extends Vue {
     const relatedArticles = await $content('articles')
       .only(['title', 'path', 'image', 'description'])
       .sortBy('createdAt', 'desc')
-      .where({ tags: { $containsAny: article.tags }, title: { $ne: article.title } })
+      .where({ tags: { $containsAny: article.tags }, title: { $ne: article.title }, isDraft: { $eq: false } })
       .limit(RELATED_ARTICLES_COUNT)
       .fetch()
     const tagsObj = await $content('articles')

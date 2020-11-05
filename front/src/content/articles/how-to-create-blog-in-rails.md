@@ -1,9 +1,10 @@
 ---
 title: '[Rails]ブログ機能を実装して、Herokuにuploadするまで'
 description: 'お知らせ投稿機能のようなシステムをrailsで実装します'
-tags: ['Rails']
+tags: ['Rails', 'Form']
 image: 'img/header/how-to-create-blog-in-rails.png'
 createdAt: '2018-03-24'
+isDraft: false
 ---
 
 SEO用にブログをwebサービスと同じドメイン内で運用したいと思い、いろいろ調べて実装してみたので、その様子を公開します。
@@ -245,11 +246,11 @@ Rails.application.config.assets.precompile += %w( *.js *application.css)
 
 これで、こんな感じの画面ができるはずです。
 
-![Squire画面例](./img/1.png)
+![Squire画面例](img/how-to-create-blog-in-rails/1.png)
 
 indexはこんな感じ。管理者ログインをすると、横に編集、削除のボタンが出てきます。
 
-![index画面例](./img/2.png)
+![index画面例](img/how-to-create-blog-in-rails/1.png)
 
 
 コピペだけで色々やってみたのに、案外何とかなりましたね。
@@ -260,13 +261,5 @@ indexはこんな感じ。管理者ログインをすると、横に編集、削
 
 ## 参考にした記事
 
-- [Railsにparsleyというjavascriptのバリデータを導入 - Qiita](https://qiita.com/mekemo_dao/items/4875a45c971091401ff1)
-- [parsley公式ページ](https://parsleyjs.org/)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]横から出てくるナビバー、simple-sidebarを導入する](../../blog/how-to-install-simple-sidebar/)
-- [[Rails]js-cookie.jsを使ってbootstrap4のタブの情報を保持する](../../blog/how-to-retain-the-information-of-bootstrap4-tab-using-js-cookie/)
-- [[Rails]動的なvalidationをParsleyと、Bootstrap4を使っておしゃれに実装する](../../blog/how-to-use-parsely-in-rails/)
+- [ruby on railsに最強のwysiwygエディタ、Squireを導入する](https://joppot.info/2015/03/02/2338)
+- [Railsのmodelで長い文字列を扱う時はstringではなくtextを使おう](https://qiita.com/mktakuya/items/00ae6222b4505ecfae65)

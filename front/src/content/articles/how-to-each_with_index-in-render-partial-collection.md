@@ -4,6 +4,7 @@ description: 'partial内でindexも使いたい場合はどうするのかなー
 tags: ['Rails']
 image: 'img/header/how-to-each_with_index-in-render-partial-collection.png'
 createdAt: '2018-08-02'
+isDraft: false
 ---
 
 

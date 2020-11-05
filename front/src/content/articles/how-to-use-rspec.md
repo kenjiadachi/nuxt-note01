@@ -4,6 +4,7 @@ description: 'RSpecはいいぞ'
 tags: ['Rails', 'RSpec']
 image: 'img/header/how-to-use-rspec.png'
 createdAt: '2020-05-31'
+isDraft: false
 ---
 
 最近テストにはまっています。
@@ -109,19 +110,3 @@ end
 またテストの書き方については別記事で書きますね。
 
 今日はこのあたりで。
-
--------
-
-## 参考にした記事
-
-- [[Docker知識不要]Docker上でのHugo環境の作り方](https://qiita.com/you1978/items/204c2cf75f86043dfe68)
-- [HugoでWebサイトを立ち上げる+テーマを適用してみる](https://qiita.com/bake0937/items/e0914efbd9434be474a4)
-- [Hugo Part 2 - Hugo で github にブログを立ち上げる](http://blog.syati.info/post/create_hugo_2/)
-- [hugo-theme-dreamのドキュメント](https://g1eny0ung.site/hugo-theme-dream/#/)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Hugo]faviconを設定する方法](../../blog/how-to-set-favicon/)
-- [[Hugo]Hugoを使いこなすためのオススメファイル構造](../../blog/file-structure-for-mastering-hugo/)

@@ -1,9 +1,10 @@
 ---
 title: '[Rails]検索情報を保持するcheck_box_tagの作り方'
 description: 'ransackで実装している検索で、チェックボックスに検索条件を保持させました'
-tags: ['Rails', 'ransack', 'check_box_tag']
+tags: ['Rails', 'Form']
 image: 'img/header/how-to-create-check_box_tag.png'
 createdAt: '2018-08-06'
+isDraft: false
 ---
 
 ransackで実装している検索に、チェックボックスに検索条件を保持させました。
@@ -114,11 +115,3 @@ end
 `Post.tags[Post.tags_i18n.first.first]`は、0になります。
 
 誰かの役に立っていればいいなあ。
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]enumの値を日本語化してラジオボタンに突っ込む](../../blog/how-to-create-radio-button-using-enum/)
-- [[Rails]1つのformを複数画面に分割して表示するwizard formを実装する](../../blog/how-to-create-wizard-form-in-rails/)
-- [[Rails]ransackで1画面で複数モデルの検索を実装する](../../blog/how-to-use-ransack-in-many-models/)

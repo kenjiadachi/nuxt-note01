@@ -18,6 +18,7 @@ import Profile from '~/components/organisms/Profile.vue'
 export default class About extends Vue {
   async asyncData({ $content, store }) {
     const tagsObj = await $content('articles')
+      .where({ isDraft: { $eq: false } })
       .only(['tags'])
       .fetch()
     const alltags = tagsObj

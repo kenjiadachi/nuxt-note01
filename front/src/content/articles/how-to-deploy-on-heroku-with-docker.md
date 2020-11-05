@@ -4,6 +4,7 @@ description: '時代はコンテナ管理'
 tags: ['Heroku', 'Docker', 'Nuxt.js', 'Rails']
 image: 'img/header/how-to-deploy-on-heroku-with-docker.png'
 createdAt: '2020-07-31'
+isDraft: false
 ---
 
 近年(といっても数年前からですが…)コンテナ、Dockerなどでインフラ管理をするのがますます当たり前になってきますね。

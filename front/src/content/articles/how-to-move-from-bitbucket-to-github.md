@@ -1,9 +1,10 @@
 ---
 title: '[Git]BitbucketからGitHubに移行しました'
 description: '使い分けがめんどくさかったのですべてGitHubに移行しました'
-tags: ['Git', 'GitHub', 'Bitbucket']
+tags: ['Git', 'GitHub']
 image: 'img/header/how-to-move-from-bitbucket-to-github.png'
 createdAt: '2020-05-10'
+isDraft: false
 ---
 
 

@@ -1,14 +1,15 @@
 ---
-title: '[Rails]bootstrapを使っているサービスでCSSで画面の一部をスクロールさせる'
+title: '[Bootstrap]Bootstrapを使っているサービスでCSSで画面の一部をスクロールさせる'
 description: 'slackのように、画面の一部だけスクロールするcssの設定です'
-tags: ['Rails', 'BootStrap4']
+tags: ['Bootstrap']
 image: 'img/header/how-to-scroll-part-of-the-screen-with-css.png'
 createdAt: '2018-06-25'
+isDraft: false
 ---
 
 slackのように、画面の一部だけスクロールするようなcssの設定の仕方を調べる際に少し困ったので備忘録に。
 
-bootstrapを使っている前提で話を進めます。
+Bootstrapを使っている前提で話を進めます。
 
 --------
 
@@ -31,7 +32,7 @@ bootstrapを使っている前提で話を進めます。
 }
 ```
 
-ただ、bootstrapを使っていると、おそらく分割の際にこのような形で実装していると思われるため、これだけでは動かないかと思います。
+ただ、Bootstrapを使っていると、おそらく分割の際にこのような形で実装していると思われるため、これだけでは動かないかと思います。
 
 ```html.haml
 # sample.haml
@@ -87,10 +88,3 @@ bootstrapを使っている前提で話を進めます。
 
 - [cssで画面内の一部だけスクロールさせる - Qiita](https://qiita.com/Yorinton/items/49c93a8c3233f204c677)
 - [画面サイズに合わせて高さを指定する3つの方法](http://weboook.blog22.fc2.com/blog-entry-411.html)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]動的なvalidationをParsleyと、Bootstrap4を使っておしゃれに実装する](../../blog/how-to-use-parsely-in-rails/)
-- [[Rails]js-cookie.jsを使ってbootstrap4のタブの情報を保持する](../../blog/how-to-retain-the-information-of-bootstrap4-tab-using-js-cookie/)

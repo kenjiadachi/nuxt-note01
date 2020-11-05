@@ -4,6 +4,7 @@ description: 'migrationファイルより簡単に管理できます'
 tags: ['Rails']
 image: 'img/header/how-to-use-ridgepole.png'
 createdAt: '2020-07-31'
+isDraft: false
 ---
 
 `bundle exec rails db:migrate`ってこれまで何回実行したことでしょうか。

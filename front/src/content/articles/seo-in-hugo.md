@@ -4,6 +4,7 @@ description: 'Hugoの設定はシンプルでいいですね'
 tags: ['Hugo', 'SEO']
 image: 'img/header/seo-in-hugo.png'
 createdAt: '2020-05-20'
+isDraft: false
 ---
 
 ※こちらの記事は公開しながらどんどん追記していく形で書いていこうと思っています。
@@ -115,7 +116,3 @@ HugoでHPを作成すると、自動でsitemapも作ってくれるので忘れ�
 
 現状ここまでですが、また何か設定したら追加していこうと思います。
 
-## こちらもぜひご一緒に！
-
-- [[Hugo]faviconを設定する方法](../../blog/how-to-set-favicon/)
-- [[Hugo]Docker上で管理できるポートフォリオを作ってみたよ](../../blog/how-to-create-this-page/)

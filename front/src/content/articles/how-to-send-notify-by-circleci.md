@@ -4,6 +4,7 @@ description: 'CircleCIの待ち時間の気持ちが楽になります'
 tags: ['CircleCI', 'slack']
 image: 'img/header/how-to-send-notify-by-circleci.png'
 createdAt: '2020-08-02'
+isDraft: false
 ---
 
 CIツールで企業では一番ポピュラーに使われているのでは？というCircleCI。
@@ -38,7 +39,7 @@ CIツールで企業では一番ポピュラーに使われているのでは？
 
 > Linux、macOS、Android、Windows、さらに SaaS やファイアウォールの内側など、必要な場所で動作します。
 
-![CircleCI](./img/1.png)
+![CircleCI](img/how-to-send-notify-by-circleci/1.png)
 
 めっちゃわかりやすい図ですね…
 
@@ -46,7 +47,7 @@ CIツールで企業では一番ポピュラーに使われているのでは？
 
 今回はslackに通知を送る方法のみご紹介します。
 
-それまでの設定については[こちら](../../blog/how-to-use-circleci/)をご覧ください。
+それまでの設定については[こちら](../how-to-use-circleci/)をご覧ください。
 
 -------
 
@@ -88,4 +89,4 @@ workflows:
 
 ## 参考にした記事
 
-- [winebarrel/ridgepole - GitHub](https://github.com/winebarrel/ridgepole)
+- [CircleCIの公式ドキュメント](https://circleci.com/docs/ja/2.0/about-circleci/)

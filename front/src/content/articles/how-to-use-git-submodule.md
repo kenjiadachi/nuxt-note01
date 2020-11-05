@@ -1,9 +1,10 @@
 ---
-title: '[git]submoduleを使いこなそう'
+title: '[Git]submoduleを使いこなそう'
 description: 'git管理を切り分けたいそこのあなたに'
 tags: ['Git']
 image: 'img/header/how-to-use-git-submodule.png'
 createdAt: '2020-08-12'
+isDraft: false
 ---
 
 近年のwebサービスだと、フロントとバックで別サーバーになっていたりすることが多いと思います。

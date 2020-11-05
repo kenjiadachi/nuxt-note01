@@ -4,6 +4,7 @@ description: 'stubを使いこなして疎結合なコードとテストを書�
 tags: ['Rails', 'RSpec']
 image: 'img/header/how-to-use-stub-on-rspec.png'
 createdAt: '2020-08-10'
+isDraft: true
 ---
 
 RSpec本当に便利で気持ちいいですよね。
@@ -77,11 +78,3 @@ end
 さあ、このUsecaseのRSpecを書いてみましょう。
 
 こんな感じになるかと思います。
-
-
-
--------
-
-## 参考にした記事
-
-- [winebarrel/ridgepole - GitHub](https://github.com/winebarrel/ridgepole)

@@ -4,6 +4,7 @@ description: 'ブックマークというかタブ全体を一括管理できま
 tags: ['Workona']
 image: 'img/header/workona-how-to-use.png'
 createdAt: '2020-05-20'
+isDraft: false
 ---
 
 いくつかの作業を同時並行的に進めると、どうしてもタブ管理が煩雑になってしまいますよね。
@@ -32,7 +33,7 @@ createdAt: '2020-05-20'
 
 僕も使い始めてまだそんなに経ってないのですが、現状こんな画面で運用しています。
 
-![workona画面画像](./img/1.png)
+![workona画面画像](img/workona-how-to-use/1.png)
 
 この、`default`などのワークスペースを開くと、自動で登録しているページを全部開いてくれるのが超便利です。
 

@@ -1,9 +1,10 @@
 ---
-title: '[Rails]Bootstrapでレスポンシブな『吹き出し』を作る方法'
+title: '[Bootstrap]Bootstrapでレスポンシブな『吹き出し』を作る方法'
 description: 'Bootstrapで簡単に人が話しているような吹き出しを作る方法を模索したのでまとめてみました'
-tags: ['Rails']
+tags: ['Bootstrap']
 image: 'img/header/make-responsive-speech-bubbles-with-bootstrap.png'
 createdAt: '2017-01-17'
+isDraft: false
 ---
 
 2018/03/25追記：
@@ -26,7 +27,7 @@ Bootstrap4では、.row-centerなど実装されたようなので、もっと�
 -------
 
 
-![イメージ画像](./img/1.png)
+![イメージ画像](img/make-responsive-speech-bubbles-with-bootstrap/1.png)
 
 Bootstrapを導入しているRailsアプリで、できるだけ簡単に人が話しているような吹き出しの作り方を模索したのでまとめてみました。
 
@@ -34,11 +35,11 @@ Bootstrapを導入しているRailsアプリで、できるだけ簡単に人が
 
 ## はじめに完成系を
 
-![吹き出し画像1](./img/2.png)
+![吹き出し画像1](img/make-responsive-speech-bubbles-with-bootstrap/2.png)
 
 このように、人が話しているような吹き出しの作り方をご紹介します。
 
-![吹き出し画像2](./img/3.png)
+![吹き出し画像2](img/make-responsive-speech-bubbles-with-bootstrap/3.png)
 
 画面を小さくしても、きちんとレスポンシブに変化してくれます。
 
@@ -173,10 +174,3 @@ Bootstrapのグリッドシステムでは、rowの中身が横に並ぶ時に�
 - [Bootstrap4移行ガイド](http://cccabinet.jpn.org/bootstrap4/)
 - [twitter bootstrapの吹き出し](http://endoyuta.com/2013/09/30/twitter-bootstrap%E3%81%AE%E5%90%B9%E3%81%8D%E5%87%BA%E3%81%97/)
 - [簡単！Bootstrap拡張：センタリンググリッドシステム](https://www.riarise.com/coding/bootstrap-extends-center-grid/)
-
--------
-
-## こちらもぜひご一緒に！
-
-- [[Rails]js-cookie.jsを使ってbootstrap4のタブの情報を保持する](../../blog/how-to-retain-the-information-of-bootstrap4-tab-using-js-cookie/)
-- [[Rails]動的なvalidationをParsleyと、Bootstrap4を使っておしゃれに実装する](../../blog/how-to-use-parsely-in-rails/)
