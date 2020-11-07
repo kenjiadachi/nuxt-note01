@@ -3,6 +3,10 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   mode: 'universal',
   srcDir: 'src',
+
+  router: {
+    base: '/nuxt-note01/',
+  },
   /*
   ** Headers of the page
   */
