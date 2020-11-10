@@ -1,12 +1,17 @@
 import colors from 'vuetify/es5/util/colors'
+const environment = process.env.NODE_ENV || 'local'
+const env = require(`./env/${environment}.ts`)
 
 export default {
   mode: 'universal',
   srcDir: 'src',
 
   router: {
-    base: '/nuxt-note01/',
+    base: env.BASE_URL,
   },
+
+  env: env,
+
   /*
   ** Headers of the page
   */
